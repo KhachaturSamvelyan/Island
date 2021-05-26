@@ -1,0 +1,300 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'ОСТРОВ БЕЛЫЙ | База отдыха и глэмпинг в Башкирии';
+
+block links
+	- var link = 'main.css';
+
+block scripts
+	- var js = 'index.js';
+
+
+block content
+
+	
+		
+		
+	
+	.main
+		.main-header
+			.container
+				header.header
+					img.burger(src="img/burger.svg", alt="")
+					ul 
+						li 
+							a(href="") О глэмпинге
+						li
+							a(href="") Проживание
+						li 
+							a(href="") Инфраструктура
+						li
+							a(href="") Контакты
+					.header-right
+						a.header-right-tel(href="tel:8 (347)-200-93-97") 8 (347)-200-93-97
+						a.header-right-btn(href="") Забронировать
+		.container
+			.main-content
+				.main-content-h1
+					h1 ОСТРОВ БЕЛЫЙ
+					p База отдыха и глэмпинг в Башкирии
+				.main-content-btn
+					a(id="play-video" class="video-play-button" href="#")
+						svg(xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none")
+							path(d="M19.548 11.159L44.5812 25.3899C46.2543 26.341 46.2703 28.7465 44.6101 29.7199L19.7693 44.2838C18.1091 45.2572 16.0177 44.0683 16.0049 42.1438L15.8126 13.3491C15.7997 11.4246 17.875 10.2079 19.548 11.159Z" stroke="white" stroke-width="3")
+							
+					p 3-ёх минутный ролик про наш глэмпинг
+				.main-content-contact
+					a(href="")
+						img(src="img/inst.png", alt="")
+					a(href="") 
+						img(src="img/Maill.png", alt="")
+					a(href="") 
+						img(src="img/Phone.png", alt="")
+
+		.main-bottom
+			.main-bottom-blok
+				a(href="")
+					span Заезд
+					img(src="img/calc.png", alt="")
+				a(href="")
+					span Выезд
+					img(src="img/calc.png", alt="")
+				a(href="")
+					span Гости
+					img(src="img/user.png", alt="")
+				a(href="").main-bottom-blok-green Забронировать
+
+	
+	.glamping
+		.container.glamping-blok
+			.glamping-blok-left
+				h2 О ГЛЭМПИНГЕ
+				.glamping-blok-left-img
+					.glamping-blok-left-img-item
+						img(src="img/img1.png", alt="")
+					.glamping-blok-left-img-item
+						img(src="img/img2.png", alt="")
+						img(src="img/img3.png", alt="")
+					.glamping-blok-left-img-item
+						img(src="img/img4.png", alt="")
+
+			.glamping-blok-right
+				.glamping-blok-right-title
+					p База отдыха и глэмпинг
+					h3 «БЕЛЫЙ БЕРЕГ»
+				.glamping-blok-right-text
+					p База отдыха и глэмпинг «БЕЛЫЙ БЕРЕГ» расположены на берегу озера Шамсутдин.
+					p Разместившись в любом из наших номеров, вы почувствуете все прелести отдыха на природе, при этом не отказываясь от комфорта гостиничного номера.
+					p Жители крупных городов приезжают в «БЕЛЫЙ БЕРЕГ», где далеко за городом, разворачивается своя жизнь: таинственная, прекрасная и богатая, далекая от шума, суеты и гула.
+				a(href="") ХОЧУ ОТДОХНУТЬ
+
+	
+
+	.land
+		.container
+			.land-top
+				img.frame(src="img/frame.svg", alt="")
+				.land-top-blok
+					.land-top-blok-title
+						h2 ПРОЖИВАНИЕ
+					.land-top-blok-text
+						p Мы предусмотрели размещение на любой вкус: деревянные дома «Монокли» с круглыми окнами и глэмпинг — комфортабельные палатки, внутри которых настоящие гостиничные номера, расположенные на берегу озера и на платформе на воде.
+						p Выбирайте то, что нравится вам.
+
+					.land-top-content
+						img.dn(src="img/left.svg", alt="")
+						.land-top-content-blok
+							.land-top-content-blok-item
+								img.img(src="img/land1.png", alt="")
+								.land-top-content-blok-item-top
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+								.land-top-content-blok-item-bottom
+									h2 Дом “Монокль”
+									p От 2500 ₽
+									.land-top-content-blok-item-bottom-date
+										img(src="img/date.svg", alt="")
+										span с 1 по 15 июня
+									a(href="") забронировать
+							.land-top-content-blok-item
+								img.img(src="img/land2.png", alt="")
+								.land-top-content-blok-item-top
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+								.land-top-content-blok-item-bottom
+									h2 Глэмпинг
+									p От 2800 ₽
+									.land-top-content-blok-item-bottom-date
+										img(src="img/date.svg", alt="")
+										span с 5 по 15 июня
+									a(href="") забронировать
+										
+							.land-top-content-blok-item
+								img.img(src="img/land3.png", alt="")
+								.land-top-content-blok-item-top
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+									svg(xmlns="http://www.w3.org/2000/svg" width="95" height="5" viewBox="0 0 95 5" fill="none")
+										rect(opacity="0.6" width="95" height="5" rx="2.5" fill="white")
+								.land-top-content-blok-item-bottom
+									h2 Глэмпинг на воде
+									p От 3000 ₽
+									.land-top-content-blok-item-bottom-date
+										img(src="img/date.svg", alt="")
+										span с 25 июня по 15 июля
+									a(href="") забронировать
+
+
+						img.dn(src="img/right.svg", alt="")
+
+	.price-main
+		.container.price-main-blok
+			.price-main-blok-left
+				h2 СТОИМОСТЬ
+				img(src="img/img5.png", alt="")
+			.price-main-blok-middle
+				img(src="img/img6.png", alt="")
+				.price-main-blok-middle-blok
+					h3 Стоимость проживания в “Белый Берег”
+					.price-main-blok-middle-blok-item
+						h4 Дом “Монокль”
+						.price-main-blok-middle-blok-item-text
+							p Пн. — Чт. 
+							p 
+								span 2 500 ₽ 
+								|за номер/сутки 
+						.price-main-blok-middle-blok-item-text
+							p Пт. — Вс.  
+							p 
+								span 3000 ₽ 
+								|за номер/сутки 
+					.price-main-blok-middle-blok-item
+						h4 Глэмпинг
+						.price-main-blok-middle-blok-item-text
+							p Пн. — Чт. 
+							p 
+								span 2 800 ₽ 
+								|за номер/сутки 
+						.price-main-blok-middle-blok-item-text
+							p Пт. — Вс.  
+							p 
+								span 3300 ₽ 
+								|за номер/сутки 
+					.price-main-blok-middle-blok-item
+						h4 Глэмпинг на воде
+						.price-main-blok-middle-blok-item-text
+							p Пн. — Чт. 
+							p 
+								span 3 500 ₽ 
+								|за номер/сутки 
+						.price-main-blok-middle-blok-item-text
+							p Пт. — Вс.  
+							p 
+								span 3000 ₽ 
+								|за номер/сутки 
+			.price-main-blok-right
+				h5 Внимание, изменено время заезда/выезда!
+				p До 13 июля 
+					span - заезд в 16:00 часов, выезд в 14:00 часов.
+				p С 13 июля до 31 июля 
+					span - заезд в 14:00 часов, выезд в 12:00 часов.
+				p С 1 августа 
+					span - заезд в 15:00 часов, выезд в 12:00 часов. 
+				img(src="img/img7.png", alt="")
+
+	.price
+		.price-blok
+			h2 СТОИМОСТЬ
+			.price-blok-item
+				.price-blok-item-text
+					p Дом “Монокль”
+					span Пн. — Чт. 
+					span Пт. — Вс.  
+				.price-blok-item-text
+					p Глэмпинг
+					span Пн. — Чт. 
+					span Пт. — Вс.  
+				.price-blok-item-text
+					p Глэмпинг на воде
+					span Пн. — Чт. 
+					span Пт. — Вс.
+			.price-blok-item.right
+				.price-blok-item-time
+					p 2 500 ₽  н./сутки 
+					p 3 000 ₽  н./сутки
+				.price-blok-item-time
+					p 2 800 ₽  н./сутки 
+					p 3 300 ₽  н./сутки
+				.price-blok-item-time
+					p 3 500 ₽  н./сутки 
+					p 3 000 ₽  н./сутки 
+
+
+	.info
+		.container
+			.info-title
+				h2 ИНФРАСТРУКТУРА
+			.info-blok
+				.info-blok-item
+					.info-blok-item-text
+						img(src="img/icon1.svg", alt="")
+						.info-blok-item-text-blok
+							h3 Территория
+							p Зеркальное озеро Шамсутдин, которое не оставит никого равнодушным к своей красоте.Причал с пирсами и лодками, для водных прогулок. Места для отдыха — гамаки и качели, способные подарить ощущение невесомости. Общественная зона— место, где можно посидеть в компании семьи или друзей и приготовить пищу на мангалах. Мини-магазин, если вы забыли что-то купить — не страшно, все самое необходимое можно приобрести прямо на базе отдыха.
+					.info-blok-item-text
+						img(src="img/icon2.svg", alt="")
+						.info-blok-item-text-blok
+							h3 Удобства
+							p Дома «Монокли» со всеми удобствами: туалет, душевая кабина, электричество и горячая вода. Уютные номера в глэмпинге.В каждой палатке проведено электричество и есть рукомойник. При заезде гостям выдается ключ от индивидуального душа и туалета, который расположен в отдельном сооружении на расстоянии минуты ходьбы от номеров.
+					.info-blok-item-text
+						img(src="img/icon3.svg", alt="")
+						.info-blok-item-text-blok
+							h3 Детские развлечения
+							p Для малышей предусмотрены развлечения, которые могут увлечь их на целый день: домик на дереве, детская площадка, батут, качели и гамаки.
+				.info-blok-item
+					.info-blok-item-text
+						img(src="img/icon4.svg", alt="")
+						.info-blok-item-text-blok
+							h3 Досуг и спорт
+							p Детская площадка, на которой находится домик на дереве, качели и батуты, порадуют всех малышей. Аренда велосипедов для лесных прогулок. Весельные лодки отлично подойдут для романтичных прогулок по озеру. Рыбалка понравится ценителям ловли рыбы в удовольствие: рыбачьте сами и обучайте этому ремеслу своих детей. Мангалы для приготовления самой вкусной пищи на костре.
+					.info-blok-item-text
+						img(src="img/icon5.svg", alt="")
+						.info-blok-item-text-blok
+							h3 Питание
+							p Все номера оборудованы мини-кухнями и необходимой посудой для приготовления пищи. У домов «Моноклей» есть индивидуальные мангальные зоны. На территории базы расположена общественная зона, где можно приготовить еду на мангальной площадке.
+					.info-blok-item-text
+						img(src="img/icon6.svg", alt="")
+						.info-blok-item-text-blok
+							h3 Прокат
+							p На территории базы отдыха можно взять в аренду: велосипеды, весельные лодки, рыболовное снаряжение, бадминтон (скоро), казаны
+
+
+	.contact
+		.container
+			.contact-blok
+				h2 КОНТАКТЫ
+				.contact-blok-item
+					.contact-blok-item-blok.p_blok
+						p Адрес: деревня Шамсутдин, Бирский район Республика Башкортостан, Россия Телефон: 8 (347)-200-93-97
+						p Паром работает: ежедневно с 7.00 до 20.00 Выбирайте дорогу через с. Кушнаренково
+						.conatct-blok-item-contact
+							a(href="")
+								img(src="img/in.svg", alt="")
+							a(href="")
+								img(src="img/ml.svg", alt="")
+							a(href="") 
+								img(src="img/tl.svg", alt="")
+					.contact-blok-item-blok.iframe
+						iframe(src="https://yandex.ru/map-widget/v1/-/CCU4mLD-9B" width="100%" height="546" frameborder="1" allowfullscreen="true" style="position:relative;")
+

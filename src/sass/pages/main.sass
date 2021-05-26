@@ -1,0 +1,1231 @@
+@import "../base/base"
+@import "../base/fonts"
+
+
+.main
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-image: url('../../img/bg.png')
+    padding-bottom: 126px
+    &-header
+        border-bottom:  2px solid #858C9A
+        padding-bottom: 19px
+        padding-top: 19px
+        .header
+            display: flex
+            justify-content: space-between
+            align-items: center
+            ul
+                display: flex
+                li
+                    &:not(:last-child)
+                        margin-right: 43px
+                    a
+                        font-family: 'Jost', sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 33px
+                        line-height: 48px
+                        letter-spacing: -0.03em
+                        color: #FFFFFF
+                        transition: 0.3s
+                        &:hover
+                            color: #A7FF83
+            &-right
+                display: flex
+                align-items: center
+                &-tel
+                    display: block
+                    margin-right: 56px
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 33px
+                    line-height: 48px
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+                    transition: 0.3s
+                    &:hover
+                            color: #A7FF83
+                &-btn
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 33px
+                    line-height: 48px
+                    letter-spacing: -0.03em
+                    color: #A7FF83
+                    transition: 0.3s
+                    background: rgba(64, 180, 206, 0.12)
+                    border: 2px solid #A7FF83
+                    box-sizing: border-box
+                    border-radius: 13px
+                    padding: 2px 19px
+                    &:hover
+                        background: #A7FF83
+                        color: #36456C
+
+    &-content
+        display: flex
+        margin-top: 130px
+        justify-content: space-between
+        align-items: center
+        &-h1
+            h1
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 95px
+                line-height: 137px
+                color: #FFFFFF
+                position: relative
+                &:after
+                    position: absolute
+                    content: "ОСТРОВ БЕЛЫЙ"
+                    color: rgba(255, 255, 255, 0.1)
+                    right: 0
+                    top: 65px
+                    transform: matrix(1, 0, 0, -1, 0, 0)
+            p
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 44px
+                line-height: 64px
+                letter-spacing: -0.03em
+                display: block
+                margin-top: 93px
+                color: #FFFFFF
+        &-btn
+            p
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 26px
+                line-height: 38px
+                max-width: 238px
+                color: #FFFFFF
+                position: relative
+                left: 35px
+            .video-play-button
+                box-sizing: content-box
+                display: block
+                width: 32px
+                height: 44px
+                border-radius: 50%
+                padding: 18px 20px 18px 28px
+                position: relative
+                &:before
+                    content: ""
+                    position: absolute
+                    z-index: 0
+                    left: 50%
+                    top: 50%
+                    transform: translateX(-50%) translateY(-50%)
+                    display: block
+                    width: 80px
+                    height: 80px
+                    background: rgba(255, 255, 255, 0.07)
+                    border-radius: 50%
+                    -webkit-animation: pulse-border 1500ms ease-out infinite
+                    animation: pulse-border 1500ms ease-out infinite
+                &:after
+                    content: ""
+                    position: absolute
+                    z-index: 1
+                    left: 50%
+                    top: 50%
+                    transform: translateX(-50%) translateY(-50%)
+                    display: block
+                    width: 80px
+                    height: 80px
+                    background: rgba(255, 255, 255, 0.09)
+                    border-radius: 50%
+                    transition: all 200ms
+                &:hover
+                    &:after
+                        background-color: rgba(255, 255, 255, 0.07)
+
+
+                img
+                    position: relative
+                    z-index: 3
+                    max-width: 100%
+                    width: auto
+                    height: auto
+                svg
+                    display: block
+                    position: relative
+                    z-index: 3
+                    right: 14px
+                    top: -6px
+
+        &-contact
+            display: flex
+            flex-direction: column
+            a
+                display: block
+                img
+                    width: 50px
+                    height: 50px
+                &:not(:last-child)
+                    margin-bottom: 19px
+
+
+    &-bottom
+        max-width: 1174px
+        margin: 0 auto
+        width:  100%
+        margin-top: 178px
+        padding: 35px 38px
+        background: linear-gradient(90.01deg, rgba(57, 62, 70, 0.37) -57.74%, rgba(253, 253, 253, 0.37) -57.73%, rgba(57, 62, 70, 0.37) 103.18%)
+        backdrop-filter: blur(8px)
+        border-radius: 17px
+        &-blok
+            border: 2px solid #FFFFFF
+            box-sizing: border-box
+            border-radius: 13px
+            padding: 14px 55px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            a
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 30px
+                line-height: 43px
+                letter-spacing: -0.03em
+                color: #FFFFFF
+                display: flex
+                align-items: center
+                position: relative
+                img
+                    width: 41px
+                    height: 41px
+                span
+                    margin-right: 29px
+                    display: block
+                &:not(:last-child)
+                    &:after
+                        content: ""
+                        width: 2px
+                        background: #fff
+                        height: 71px
+                        position: absolute
+                        right: -60px
+
+
+            &-green
+                color: #A7FF83!important
+
+
+                
+@keyframes pulse-border
+    0% 
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2)
+        opacity: 1
+
+    100% 
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2.5)
+        opacity: 0
+
+
+
+
+
+.glamping
+    margin-top: 49px
+    &-blok
+        display: flex
+        justify-content: space-between
+        &-left
+            h2
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 70px
+                line-height: 101px
+                letter-spacing: -0.03em
+                color: rgba(0, 0, 0, 0.58)
+                position: relative
+                margin-bottom: 99px
+                &:after
+                    position: absolute
+                    left: 0
+                    top: 51px
+                    content: "О ГЛЭМПИНГЕ"
+                    transform: matrix(1, 0, 0, -1, 0, 0)
+                    color: rgba(241, 241, 241, 1)
+            &-img
+                display: flex
+                &-item
+                    margin-right: 22px
+                    &:nth-of-type(2)
+                        padding-top: 25px
+                        display: flex
+                        flex-direction: column
+                        img
+                            margin-bottom: 22px
+                    &:nth-of-type(3)
+                        padding-top: 55px
+                        
+
+        &-right
+            &-title
+                background: #36456C
+                border-radius: 8px
+                padding: 7px 62px
+                margin-bottom: 42px
+                p
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 46px
+                    line-height: 111.5%
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+                    display: block
+                h3
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 40px
+                    line-height: 125.5%
+                    letter-spacing: -0.03em
+                    color: #A7FF83
+            &-text
+                margin-bottom: 55px
+                p
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 30px
+                    line-height: 99%
+                    letter-spacing: -0.01em
+                    color: #6D6969
+                    margin-bottom: 25px
+                    padding-left: 30px
+            a
+                display: block
+                margin: 0 auto
+                text-align: center
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 35px
+                line-height: 51px
+                letter-spacing: -0.03em
+                color: #FFFFFF
+                padding: 10px 38px 
+                background: #36456C
+                border-radius: 8px
+                transition: 0.3s
+                border: 1px solid transparent
+                max-width: 371px
+                &:hover
+                    background: white
+                    color: #36456C
+                    border: 1px solid #36456C
+
+
+
+
+.land
+    margin-top: 145px
+    margin-bottom: 300px
+
+    &-top
+        position: relative
+        .frame
+            position: absolute
+            z-index: -1
+            right: 0
+            bottom: -320px
+        &-blok
+            display: flex
+            justify-content: space-between
+            position: relative
+            &-title
+                background: linear-gradient(178.58deg, #36456C 25.01%, rgba(65, 86, 140, 0.84) 51.42%, rgba(139, 152, 186, 0) 98.79%)
+                border-radius: 7px
+                padding: 35px 79px
+                min-height: 661px
+                min-width: 840px
+                margin-right: 100px
+                h2
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 70px
+                    line-height: 101px
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+                    position: relative
+                    &:after
+                        content: "ПРОЖИВАНИЕ"
+                        left: 0
+                        position: absolute
+                        top: 53px
+                        color: rgba(64, 78, 115, 0.7)
+                        transform: matrix(1, 0, 0, -1, 0, 0)
+            &-text
+                p
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 26px
+                    line-height: 29px
+                    letter-spacing: -0.03em
+                    color: #55585C
+                    display: block
+                    margin-bottom: 40px
+        &-content
+            display: flex
+            align-items: center
+            position: absolute
+            top: 220px
+            left: 50%
+            transform: translateX(-50%)
+            img
+                cursor: pointer
+            &-blok
+                margin: 0 25px
+                display: flex
+                justify-content: space-between
+                &-item
+                    position: relative
+                    min-width: 453px
+                    min-height: 621px
+                    padding-bottom: 0
+                    padding-top: 20px
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    .img
+                        position: absolute
+                        z-index: -1
+                        top: 0
+                        left: 0
+                        right: 0
+                        margin: auto
+                        width: 100%
+                    &:not(:last-child)
+                        margin-right: 25px
+                    &-top
+                        text-align: center
+                        svg
+                            &:not(:last-child)
+                                margin-right: 9px
+                    &-bottom
+                        padding: 15px
+                        background: linear-gradient(90.01deg, rgba(218, 205, 205, 0.44) -28.36%, rgba(255, 255, 255, 0.44) -28.36%, rgba(255, 255, 255, 0.44) -28.36%, rgba(215, 215, 216, 0.44) -28.34%, rgba(76, 77, 78, 0.44) 33.81%, rgba(92, 93, 94, 0.44) 99.98%)
+                        backdrop-filter: blur(8px)
+                        border-radius: 0px 0px 7px 7px
+                        padding-bottom: 20px
+                        h2
+                            font-family: 'Jost', sans-serif
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 40px
+                            line-height: 58px
+                            letter-spacing: -0.03em
+                            color: #FFFFFF
+                        p
+                            font-family: 'Jost', sans-serif
+                            font-style: normal
+                            font-weight: 600
+                            font-size: 23px
+                            line-height: 33px
+                            letter-spacing: -0.03em
+                            color: #A7FF83
+                            display: block
+                            margin-bottom: 5px
+                        &-date
+                            display: flex
+                            align-items: center
+                            margin-bottom: 5px
+                            img
+                                margin-right: 6px
+                            span
+                                font-family: 'Jost', sans-serif
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 24px
+                                line-height: 35px
+                                color: #FFFFFF
+                        a
+                            font-family: 'Jost', sans-serif
+                            font-style: normal
+                            margin: 0 auto
+                            font-weight: normal
+                            font-size: 25px
+                            line-height: 36px
+                            color: #A7FF83
+                            text-align: center
+                            background: rgba(64, 180, 206, 0.12)
+                            border: 2px solid #A7FF83
+                            box-sizing: border-box
+                            border-radius: 10px
+                            padding: 2px 42px
+                            display: block
+                            max-width: 260px
+                            transition: 0.3s
+                            margin-top: 10px
+                            &:hover
+                                color: #36456C
+                                background: #A7FF83
+
+
+
+.price-main
+    &-blok
+        display: flex
+        margin-top: 450px
+        &-left
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            h2
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 80px
+                line-height: 116px
+                letter-spacing: -0.03em
+                color: rgba(0, 0, 0, 0.58)
+                transform: rotate(-90deg)
+                position: relative
+                &:after
+                    content: "СТОИМОСТЬ"
+                    position: absolute
+                    left: 0
+                    top: 56px
+                    transform: rotate(180deg)
+                    color: rgba(241, 241, 241, 0.5)
+        &-middle
+            background: #36456C
+            &-blok
+                padding: 19px 80px
+                h3
+                    margin: 0 auto
+                    text-align: center
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 34px
+                    line-height: 40px
+                    text-align: center
+                    color: #A7FF83
+                    max-width: 413px
+                    margin-bottom: 5px
+                &-item
+                    h4
+                        font-family: 'Jost', sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 40px
+                        line-height: 58px
+                        letter-spacing: -0.03em
+                        color: #FFFFFF
+                        margin-bottom: 2px
+                    &-text
+                        display: flex
+                        padding-left: 90px
+                        p
+                            &:first-child
+                                margin-right: 75px
+                                font-family: 'Jost', sans-serif
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 33px
+                                line-height: 48px
+                                letter-spacing: -0.03em
+                                color: #FFFFFF
+                            &:nth-child(2)
+                                font-family: 'Jost', sans-serif
+                                font-style: normal
+                                font-weight: 500
+                                font-size: 33px
+                                line-height: 48px
+                                letter-spacing: -0.03em
+                                color: white
+                                span
+                                    color: #A7FF83
+
+        &-right
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            h5
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 35px
+                letter-spacing: -0.03em
+                color: #36456C
+                max-width: 389px
+                margin: 0 auto
+
+                margin-bottom: 30px
+            p
+                font-family: 'Jost', sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 30px
+                line-height: 43px
+                letter-spacing: -0.03em
+                color: #36456C
+                margin: 0 auto
+                max-width: 389px
+                span
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 30px
+                    line-height: 43px
+                    letter-spacing: -0.03em
+                    color: #000000
+
+
+
+
+.price
+    margin-top: 139px
+    background-image: url("../../img/price.png")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 57px 0px
+    margin-bottom: 69px
+
+    &-blok
+        max-width: 761px
+        margin: 0 auto
+        padding: 47px 69px
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.272) -5.3%, rgba(255, 255, 255, 0.068) 139.63%)
+        backdrop-filter: blur(10px)
+        border-radius: 20px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        h2
+            font-family: 'Jost', sans-serif
+            font-style: normal
+            font-weight: 500
+            margin: 0 auto
+            font-size: 80px
+            line-height: 116px
+            color: #FFFFFF
+            margin-bottom: 101px
+            position: relative
+            max-width: 487px
+            width: 100%
+            &:after
+                content: "СТОИМОСТЬ"
+                position: absolute
+                top: 58px
+                left: 0
+                color: rgba(87, 98, 98, 0.9)
+                transform: matrix(1, 0, 0, -1, 0, 0)
+        &-item
+            &:not(:last-child)
+                border-right: 3px solid rgba(167, 255, 131, 0.6)
+                padding-right: 50px
+            &-text
+                margin-bottom: 20px
+                p
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 40px
+                    line-height: 58px
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+                    display: block
+                    margin-bottom: 29px   
+                    text-decoration: underline
+                span
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 33px
+                    line-height: 48px
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+                    opacity: 0.75     
+                    display: block
+                    text-align: right
+        .right
+            .price-blok-item-time
+                margin-top: 88px
+                &:nth-child(2)
+                    margin-top: 106px
+                &:nth-child(3)
+                    margin-top: 109px
+
+                p
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 33px
+                    line-height: 48px
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+
+
+.info
+    padding-bottom: 22px
+    margin-bottom: 30px
+    &-title
+        margin-bottom: 90px
+        padding: 7px 130px 
+        background: #36456C
+        border-radius: 13px
+        padding-bottom: 55px
+        max-width: 994px
+        h2
+            font-family: 'Jost', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 80px
+            line-height: 116px
+            color: #FFFFFF
+            position: relative
+            &:after
+                content: "ИНФРАСТРУКТУРА"
+                position: absolute
+                top: 57px
+                left: 0
+                color: rgba(89, 101, 133, 0.5)
+                transform: matrix(1, 0, 0, -1, 0, 0)
+    &-blok
+        display: flex
+        justify-content: space-between
+        &-item
+            display: flex
+            flex-direction: column
+            &:first-child
+                border-right: 3px solid #36456C
+                padding-right: 165px
+            &-text
+                display: flex
+                align-items: flex-start
+                margin-bottom: 30px
+                img
+                    margin-right: 20px
+                &-blok
+                    h3
+                        font-family: 'Jost', sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 25px
+                        line-height: 36px
+                        color: #36456C
+                        margin-bottom: 10px
+                    p
+                        font-family: 'Jost', sans-serif
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 20px
+                        line-height: 26px
+                        color: #55585C
+                        max-width: 611px
+
+
+
+
+
+.contact
+    background-image: url("../../img/river.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 94px 0px 225px
+    &-blok
+        h2
+            font-family: 'Jost', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 95px
+            line-height: 137px
+            letter-spacing: -0.03em
+            color: #FFFFFF
+            position: relative
+            margin-bottom: 157px
+            &:after
+                content: "КОНТАКТЫ"
+                position: absolute
+                left: 0
+                top: 66px
+                transform: matrix(1, 0, 0, -1, 0, 0)
+                color:  rgba(255, 252, 252, 0.1)
+        &-item
+            display: flex
+            &-blok
+                width: 100%
+            .p_blok
+                max-width: 650px
+                margin-right: 34px
+                p
+                    font-family: 'Jost', sans-serif
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 35px
+                    line-height: 112%
+                    letter-spacing: -0.03em
+                    color: #FFFFFF
+                    display: block
+                    margin-bottom: 80px
+            
+                .conatct-blok-item-contact
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-top: 130px
+                    a
+                        display: block
+                        &:not(:last-child)
+                            margin-right: 120px
+            .contact-blok-item-blok
+                iframe
+                    border: none
+                    border-radius: 20px
+
+            .iframe
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) -5.3%, rgba(255, 255, 255, 0.308) 139.63%)
+                backdrop-filter: blur(10px)
+                border-radius: 20px
+                padding: 24px
+
+
+
+
+@media (max-width: 1698px)
+
+    .info
+        &-blok
+            &-item
+                &:first-child
+                    border-right: unset
+                    padding-right: 0px
+
+
+    .price-main
+        img
+            width: 100%
+        &-blok
+            margin-top: 200px
+            &-left
+                justify-content: space-around
+                h2
+                    font-size: 41px
+                    &:after
+                        top: 30px
+            &-middle
+                width: 100%
+                &-blok
+                    padding: 15px
+                    h3
+                        font-size: 22px
+                    &-item
+                        text-align: center
+                        h4
+                            font-size: 20px
+                        &-text
+                            padding-left: 0
+                            text-align: center
+            &-right
+                justify-content: unset
+                h5
+                    font-size: 25px
+                    padding-left: 10px
+                p
+                    font-size: 20px
+                    padding-left: 10px
+                    span
+                        font-size: 20px
+
+
+
+    .main
+        &-header
+            .header
+                ul
+                    li
+                        a
+                            font-size: 25px
+                &-right
+                    &-tel
+                        font-size: 25px
+                    &-btn
+                        font-size: 25px
+    .glamping
+        &-blok
+            flex-wrap: wrap
+            justify-content: center
+            &-left
+                margin-bottom: 40px
+                h2
+                    text-align: center
+                    max-width: 475px
+                    margin: 0 auto
+                    margin-bottom: 99px
+            &-right
+                &-title
+                    text-align: center
+
+    .land
+        margin-bottom: 50px
+        &-top
+            .frame
+                display: none
+            &-blok
+                &-title
+                    min-width: 650px
+            &-content
+                top: 280px
+                &-blok
+                    &-item
+                        min-width: 330px
+                        min-height: 453px
+                        &-bottom
+                            h2
+                                font-size: 30px
+
+@media (max-width: 1280px)
+    .price
+        margin-top: 0
+    .contact
+        padding-top: 50px
+        padding-bottom: 50px
+        &-blok
+            max-width: 95%
+            margin: 0 auto
+            h2
+                font-size: 40px
+                max-width: 197px
+                margin: 0 auto
+                margin-bottom: 40px
+                &:after
+                    top: 29px
+            &-item
+                flex-direction: column
+                .p_blok
+                    max-width: 100%
+                    margin-right: 0
+                    margin-bottom: 50px
+                    p
+                        font-size: 25px
+                        margin-bottom: 40px
+                    .conatct-blok-item-contact
+                        a
+                            display: block
+                            &:not(:last-child)
+                                margin-right: 50px
+                .contact-blok-item-blok
+                    iframe
+                        height: 400px
+    .info
+        &-title
+            max-width: 95%
+            margin: 0 auto
+            padding: 0 20px
+            padding-bottom: 5px
+            margin-bottom: 50px
+            h2
+                font-size: 30px
+                max-width: 265px
+                margin: 0 auto
+                &:after
+                    top: 20px
+        &-blok
+            flex-direction: column
+            max-width: 95%
+            margin: 0 auto
+
+
+    .price-main
+        &-blok
+            margin-top: 70px
+            &-left
+                display: none
+            &-right
+                display: none
+            &-middle
+                &-blok
+                    h3
+                        font-size: 18px
+                        max-width: 100%
+                    &-item
+                        &-text
+                            padding-left: 0
+                            justify-content: center
+                            p
+                                &:first-child
+                                    margin-right: 10px
+                                    font-size: 17px
+                                &:nth-child(2)
+                                    font-size: 17px
+
+
+
+    .main
+        &-header
+            .header
+                flex-wrap: wrap
+                justify-content: space-around
+                ul
+                   
+                    flex-wrap: wrap
+                    justify-content: center
+                    li
+                        a
+                            font-size: 25px
+        &-content
+            flex-direction: column
+            &-h1
+                p
+                    text-align: center
+            &-btn
+                text-align: center
+                .video-play-button
+                    margin: 0 auto
+                p
+                    left: 0
+            &-contact
+                flex-direction: row
+                margin-top: 30px
+                a
+                    &:not(:last-child)
+                        margin-bottom: 0px
+                        margin-right: 15px
+
+
+        &-bottom
+            max-width: 95%
+            margin-top: 60px
+            &-blok
+                flex-direction: column
+                a
+                    margin-bottom: 20px
+                    &:not(:last-child)
+                        &:after
+                            content: none
+    
+    .glamping
+        &-blok
+            &-left
+                &-img
+                    flex-direction: column
+                    align-items: center
+                    &-item
+                        margin-right: 0
+                        margin-bottom: 0px
+                        img
+                            width: 100%
+                            margin-bottom: 20px
+                        &:nth-of-type(2)
+                            padding-top: 0
+                        &:nth-of-type(3)
+                            padding-top: 0px
+
+            &-right
+                max-width: 95%
+
+
+    .land
+        margin-top: 45px
+        margin-bottom: 45px
+        &-top
+            &-blok
+                flex-direction: column
+                align-items: center
+                max-width: 95%
+                margin: 0 auto
+                &-title
+                    min-height: unset
+                    margin-bottom: 50px
+                    min-width: unset
+                    margin-right: 0
+                    padding: 0
+                    background: #36456C
+                    padding-bottom: 15px
+                    width: 100%
+                    h2
+                        font-size: 40px
+                        max-width: 276px
+                        margin: 0 auto
+                        &:after
+                            top: 27px
+            &-content
+                position: unset
+                transform: unset
+                .dn
+                    display: none
+                &-blok
+                    flex-direction: column
+                    align-items: center
+                    margin-left: 0
+                    margin-right: 0
+                    &-item
+                        &:not(:last-child)
+                            margin-right: 0px
+                            margin-bottom: 50px
+
+
+
+
+@media (max-width: 1080px)
+    .main
+        &-header
+            .header
+                ul
+                    margin-bottom: 10px
+
+@media (min-width: 765px)
+    .burger
+        display: none
+
+
+
+
+
+@media (max-width: 765px)
+    
+    .price
+        &-blok
+            max-width: 95%
+            padding: 20px
+            h2 
+                font-size: 40px
+                margin-bottom: 20px
+                text-align: center
+                &:after
+                    content: none
+            &-item
+                &:not(:last-child)
+                    padding-right: 0
+                    border-right: unset
+                &-text
+                    p
+                        font-size: 18px
+                    span
+                        font-size: 16px
+            .right
+                .price-blok-item-time
+                    margin-top: 88px
+                    &:nth-child(2)
+                        margin-top: 106px
+                    &:nth-child(3)
+                        margin-top: 109px
+
+                    p
+                        font-size: 20px
+
+                    
+
+
+
+    .main
+        &-header
+            .header
+
+                flex-wrap: wrap
+                justify-content: center
+                flex-direction: column
+                padding-bottom: 20px
+                .burger
+                    margin-left: auto
+                    padding-right: 20px
+                    margin-bottom: 25px
+                ul
+                    margin-bottom: 10px
+                    justify-content: center
+                    flex-direction: column
+                    align-items: center
+                    display: none
+                    li
+                        &:not(:last-child)
+                            margin-bottom: 15px
+                            margin-right: 0
+                &-right
+                    flex-direction: column
+                    align-items: center
+                    &-tel
+                        margin-bottom: 10px
+                        margin-right: 0
+
+
+        &-content
+            margin-top: 50px
+            &-h1
+                h1
+                    font-size: 45px
+                    text-align: center
+                    max-width: 359px
+                    margin: 0 auto
+                    &:after
+                        top: 32px
+                
+                p
+                    margin-top: 50px
+
+    .glamping
+        &-blok
+            &-left
+               h2
+                   font-size: 45px
+                   max-width: 305px
+                   margin-bottom: 60px
+                   &:after
+                       top: 32px
+            &-right
+                &-title
+                    h3
+                        font-size: 30px
+                &-text
+                    p
+                        padding-left: 0
+                a
+                    font-size: 20px
+
+
+
+@media (max-width: 375px)
+    .main
+        &-content
+            &-h1
+                h1
+                    font-size: 36px
+                    max-width: 287px
+
+    .land
+        &-top
+            &-content
+                &-blok
+                    &-item
+                        min-width: 300px
+        
+
+    .glamping
+        &-blok
+            &-left
+                &-img
+                    &-item
+                        max-width: 95%
+            &-right
+                &-title
+                    p
+                        font-size: 30px
+                    h3
+                        font-size: 26px
+
+
+    .price
+        &-blok
+            .right
+                .price-blok-item-time
+                    p
+                        font-size: 16px
